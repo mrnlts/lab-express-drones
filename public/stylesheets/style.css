@@ -1,8 +1,121 @@
 body {
-  padding: 50px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
 }
 
-a {
+body > ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 2rem 0;
+  background-color: grey;
+  position: static;
+  top: 0;
+}
+
+body > ul > li > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  padding: 0.2rem;
+  font-size: 3rem;
   color: #00b7ff;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.drones-container {
+  margin-top: 4rem;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90rem;
+  padding: 0;
+}
+
+.drone {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color:rgba(189, 180, 180, 0.781);
+  width: 35%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.drone > img {
+  width: 30%;
+  padding-right: 2rem;
+}
+
+.drone > div {
+  text-align: left;
+  width: 60%;
+}
+
+button {
+  font-size: 1rem;
+  color: black;
+  width: 6rem;
+  border: none;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.btns {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background-color: tomato;
+  margin-right: 4rem;
+}
+
+.edit-btn {
+  background-color: rgb(157, 236, 157);
+}
+
+.form {
+  width: 50%;
+  margin: 1rem auto;  
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
 }

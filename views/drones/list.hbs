@@ -1,13 +1,21 @@
-<h1>🚀 Available drones 🚀</h1>
+<h1>🔍 Drones in stock 🔍</h1>
 
-<div>
+<div class="drones-container">
     {{#each drones}}
-        <hr>
-        <div>
-            <h2>Name: {{this.name}}</h2>
-            <h3>Propellers: {{this.propellers}}</h3>
-            <h3>Speed: {{this.maxSpeed}}</h3>
-            <a href="/drones/{{id}}/edit">Edit</a>
+        
+        <div class="drone">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Drone.svg" alt="">
+            <div>
+                <h2>{{this.name}}</h2>
+                <h3>Propellers: {{this.propellers}}</h3>
+                <h3>Speed: {{this.maxSpeed}}</h3>
+                <div class="btns">
+                    <button class="edit-btn"><a style="text-decoration: none !important; color: inherit" href="/drones/{{id}}/edit">Edit</a></button>
+                    <form action="/drones/{{id}}/delete" method="post">
+                        <button class="delete-btn">Delete</button>
+                    </form>
+                </div>
+            </div>
         </div>
     {{/each}}
 </div>
